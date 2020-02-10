@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+    />
+
+    <TextView
+        android:id="@+id/profile_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="UserName"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_user_name"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="name"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="website"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/website"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/following_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <info.hoang8f.widget.FButton
+        android:id = "@+id/following_btn"
+        android:layout_width="128dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:text="Following Count"
+        android:backgroundTint="@color/fbutton_color_concrete"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#A9A9A9" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/follower_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+
+    <info.hoang8f.widget.FButton
+        android:id = "@+id/follower_btn"
+        android:layout_width="128dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:text="Followers Count"
+        android:backgroundTint="@color/fbutton_color_concrete"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/linearLayout"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="11dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+    android:id="@+id/repo_count"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="0"
+    android:textColor="@color/colorBlue"
+    android:textSize="24sp" />
+
+    <info.hoang8f.widget.FButton
+    android:id="@+id/repo_id"
+    android:layout_width="128dp"
+    android:layout_height="36dp"
+    android:layout_marginTop="10dp"
+    android:text="Repos Count"
+    android:backgroundTint="@color/fbutton_color_concrete"
+    android:textSize="12sp"
+    android:textColor="@color/white"
+    android:textStyle="bold" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <View
+    android:id="@+id/line"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/linearLayout2"
+    android:layout_marginTop="10dp"
+    android:background="#A9A9A9" />
+
+
+    <TextView
+        android:id = "@+id/bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bio"
+        android:layout_below="@id/line"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id = "@+id/profile_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Created"
+        android:layout_below="@id/bio"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/follow_btn"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/profile_date"
+        android:text="Follow"
+        android:backgroundTint="@color/fbutton_color_concrete"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/unfollow_btn"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:text="Unfollow"
+        android:layout_below="@+id/follow_btn"
+        android:backgroundTint="@color/fbutton_color_concrete"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

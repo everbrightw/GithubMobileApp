@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_repo"
+            android:icon="@drawable/ic_inbox_black_24dp"
+            android:title="Repository" />
+        <item
+            android:id="@+id/nav_following"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Following" />
+        <item
+            android:id="@+id/nav_follower"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Follower" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Notifications" />
+    </group>
+
+    <item android:title="Find">
+        <menu>
+            <item
+                android:id="@+id/nav_search_user"
+                android:icon="@drawable/ic_find_in_page_black_24dp"
+                android:title="Search Users" />
+            <item
+                android:id="@+id/nav_search_repository"
+                android:icon="@drawable/ic_find_in_page_black_24dp"
+                android:title="Search Repositories" />
+        </menu>
+    </item>
+
+</menu>
